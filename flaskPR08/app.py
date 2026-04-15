@@ -87,6 +87,7 @@ def register():
             db.session.add(user)
             db.session.commit()
                 
+                
             return redirect('/')
         except Exception as e: 
             print(e)
@@ -119,6 +120,5 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True, ssl_context = ('cert.pem', 'key.pem'))
-
 
 
